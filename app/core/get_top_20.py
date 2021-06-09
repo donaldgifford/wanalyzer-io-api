@@ -41,7 +41,7 @@ def get_character_items(character: Character) -> Items:
     :param character:
     :return:
     """
-    headers = {"Authorization": "Bearer US3NAA6hb6UxWFL4zwvjT2uKA228yt69Js"}
+    headers = {"Authorization": "Bearer xxxx"}
     querystring = {"namespace": "profile-us", "locale": "en_US"}
     profile_url = f"{BLIZZARD_API_URL}/profile/wow/character/{character.realm}/{character.name}/equipment"
     payload = ""
