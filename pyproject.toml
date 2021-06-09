@@ -9,12 +9,28 @@ license = "MIT"
 python = "^3.9"
 uvicorn = "^0.14.0"
 fastapi = "^0.65.1"
+httpx = "^0.18.1"
+SQLAlchemy = "^1.4.17"
+psycopg2-binary = "^2.8.6"
+celery = "<5.0.0"
+redis = "^3.5.3"
+flower = "^0.9.7"
+requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
 flake8 = "^3.9.2"
 requests = "^2.25.1"
 pytest-cov = "^2.12.1"
+graphene = "^2.1.8"
+gql = "^2.0.0"
+isort = "^5.8.0"
+yapf = "^0.31.0"
+
+[tool.isort]
+profile = "pycharm"
+src_paths = ["app"]
+combine_as_imports = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

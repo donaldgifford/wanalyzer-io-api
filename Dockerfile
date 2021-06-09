@@ -1,5 +1,8 @@
 FROM python:3.9-slim
 
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
 WORKDIR code
 COPY poetry.lock pyproject.toml ./
 
@@ -10,6 +13,5 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY . ./
 
-EXPOSE 80
+EXPOSE 8000
 
-#CMD poetry run uvicorn --host=0.0.0.0 app.main:app
